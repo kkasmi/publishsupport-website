@@ -66,7 +66,7 @@ export default function HomePage() {
               <div style={{ position: 'relative' }}>
                 <div style={{ position: 'absolute', inset: '-20px', background: 'radial-gradient(circle, rgba(0,170,255,0.15) 0%, transparent 70%)', borderRadius: '50%' }}/>
                 <img
-                  src="/logo_vector.svg"
+                  src="/master_logo_1024.png"
                   alt="Publish Support"
                   width="280"
                   height="280"
