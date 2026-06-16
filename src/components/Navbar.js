@@ -35,14 +35,13 @@ export default function Navbar() {
         maxWidth: 'var(--max-width)', margin: '0 auto', padding: '0 32px',
         width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        {/* Logo */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <img 
-            src="/logo_vector.svg" 
-            alt="Publish Support" 
-            width="44" 
-            height="44" 
-            style={{borderRadius: '10px'}}
+          <img
+            src="/logo_vector.svg"
+            alt="Publish Support"
+            width="44"
+            height="44"
+            style={{ borderRadius: '10px' }}
           />
           <div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 700, color: 'var(--white)', lineHeight: 1.1 }}>Publish</div>
@@ -50,31 +49,21 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Desktop links */}
         <div style={{ display: 'flex', gap: '36px', alignItems: 'center' }} className="desktop-nav">
           {links.map(link => (
             <Link key={link.href} href={link.href} style={{
               fontSize: '14px', fontWeight: 500, letterSpacing: '0.5px',
               color: pathname === link.href ? 'var(--accent-blue)' : 'var(--text-secondary)',
-              transition: 'color 0.2s',
               textTransform: 'uppercase',
-            }}
-            onMouseEnter={e => e.target.style.color = 'var(--white)'}
-            onMouseLeave={e => e.target.style.color = pathname === link.href ? 'var(--accent-blue)' : 'var(--text-secondary)'}
-            >{link.label}</Link>
+            }}>{link.label}</Link>
           ))}
           <Link href="/contact" style={{
             padding: '10px 24px', borderRadius: '6px',
             background: 'var(--accent-blue)', color: '#000',
-            fontSize: '14px', fontWeight: 600, letterSpacing: '0.5px',
-            transition: 'opacity 0.2s',
-          }}
-          onMouseEnter={e => e.target.style.opacity = '0.85'}
-          onMouseLeave={e => e.target.style.opacity = '1'}
-          >Get in Touch</Link>
+            fontSize: '14px', fontWeight: 600,
+          }}>Get in Touch</Link>
         </div>
 
-        {/* Mobile menu button */}
         <button onClick={() => setMenuOpen(!menuOpen)} style={{
           background: 'none', border: 'none', cursor: 'pointer',
           display: 'none', flexDirection: 'column', gap: '5px', padding: '4px',
@@ -85,7 +74,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div style={{
           position: 'absolute', top: 'var(--nav-height)', left: 0, right: 0,
