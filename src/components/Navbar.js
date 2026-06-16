@@ -40,10 +40,12 @@ export default function Navbar() {
           <svg width="40" height="40" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
             <rect x="0" y="0" width="300" height="300" rx="66" fill="#111111"/>
             <g transform="translate(74,76)">
-              <path d="M0 152 L0 4 Q0 -16 18 -20 Q72 -30 108 -6 Q148 18 148 58 Q148 98 108 112 Q86 122 60 122 L60 152 Z" fill="white" opacity="0.95"/>
-              <path d="M26 92 L26 20 Q56 14 82 30 Q104 42 104 60 Q104 80 82 90 Q60 100 30 98" fill="#111111"/>
+              <path d="M72 228 L72 80 Q72 60 90 56 Q144 46 176 68 Q210 90 210 130 Q210 170 176 184 Q154 194 128 194 L128 228 Z" fill="white" opacity="0.95"/>
+              <path d="M98 168 L98 96 Q128 90 154 106 Q172 118 172 136 Q172 154 154 164 Q132 174 102 172" fill="#111111" stroke="none"/>
             </g>
-            <text x="212" y="234" fontFamily="Arial Rounded MT Bold, Arial, sans-serif" fontSize="68" fontWeight="900" fill="#00AAFF" textAnchor="middle">S</text>
+            <g transform="translate(138, 240) scale(1.3, 0.75)">
+              <text x="0" y="0" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="56" font-weight="900" fill="#00AAFF" text-anchor="middle" dominant-baseline="auto">S</text>
+            </g>
           </svg>
           <div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 700, color: 'var(--white)', lineHeight: 1.1 }}>Publish</div>
