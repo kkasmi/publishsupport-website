@@ -4,10 +4,8 @@ import Footer from '../components/Footer'
 
 export const metadata = {
   title: 'Publish Support — Software & Publishing Solutions',
-  description: 'Publish Support offers expert software development and book & article publishing services. We help bring your ideas to life — in code and in print.',
-  icons: {
-    icon: '/favicon.ico',
-  },
+  description: 'Publish Support offers expert software development and book & article publishing services.',
+  icons: { icon: '/favicon.ico' },
 }
 
 export default function RootLayout({ children }) {
