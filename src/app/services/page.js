@@ -24,30 +24,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '48px' }}>
-            <div style={{ width: '4px', height: '40px', background: 'var(--accent-blue)', borderRadius: '2px' }}/>
-            <h2 style={{ fontSize: '32px', fontWeight: 700 }}>Software Development</h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-            {[
-              { title: 'Web Applications', desc: 'Full-stack web apps built with modern frameworks — React, Next.js, Node.js, and more.', icon: '🌐' },
-              { title: 'Desktop Software', desc: 'Cross-platform desktop applications for Windows, Mac, and Linux.', icon: '💻' },
-              { title: 'APIs & Backends', desc: 'Robust REST and GraphQL APIs, database design, and backend infrastructure.', icon: '⚙️' },
-              { title: 'Automation Tools', desc: 'Custom scripts, bots, and automation workflows that save time.', icon: '🤖' },
-              { title: 'Cloud Solutions', desc: 'Cloud architecture, deployment pipelines, and managed hosting.', icon: '☁️' },
-              { title: 'CMS & Portals', desc: 'Content management systems and client portals tailored to how your team works.', icon: '📊' },
-            ].map(s => (
-              <div key={s.title} className="svc-card svc-card-blue">
-                <div style={{ fontSize: '28px', marginBottom: '14px' }}>{s.icon}</div>
-                <h3 style={{ fontSize: '17px', fontWeight: 600, marginBottom: '10px' }}>{s.title}</h3>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.7 }}>{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section style={{ padding: '80px 32px', background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
@@ -74,6 +50,33 @@ export default function ServicesPage() {
         </div>
       </section>
 
+                
+      <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '48px' }}>
+            <div style={{ width: '4px', height: '40px', background: 'var(--accent-blue)', borderRadius: '2px' }}/>
+            <h2 style={{ fontSize: '32px', fontWeight: 700 }}>Software Development</h2>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+            {[
+              { title: 'Web Applications', desc: 'Full-stack web apps built with modern frameworks — React, Next.js, Node.js, and more.', icon: '🌐' },
+              { title: 'Desktop Software', desc: 'Cross-platform desktop applications for Windows, Mac, and Linux.', icon: '💻' },
+              { title: 'APIs & Backends', desc: 'Robust REST and GraphQL APIs, database design, and backend infrastructure.', icon: '⚙️' },
+              { title: 'Automation Tools', desc: 'Custom scripts, bots, and automation workflows that save time.', icon: '🤖' },
+              { title: 'Cloud Solutions', desc: 'Cloud architecture, deployment pipelines, and managed hosting.', icon: '☁️' },
+              { title: 'CMS & Portals', desc: 'Content management systems and client portals tailored to how your team works.', icon: '📊' },
+            ].map(s => (
+              <div key={s.title} className="svc-card svc-card-blue">
+                <div style={{ fontSize: '28px', marginBottom: '14px' }}>{s.icon}</div>
+                <h3 style={{ fontSize: '17px', fontWeight: 600, marginBottom: '10px' }}>{s.title}</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.7 }}>{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
       <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           <h2 style={{ fontSize: '32px', fontWeight: 700, marginBottom: '48px', textAlign: 'center' }}>How We Work</h2>
