@@ -65,15 +65,13 @@ export default function HomePage() {
             <div className="hero-icon" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <div style={{ position: 'relative' }}>
                 <div style={{ position: 'absolute', inset: '-20px', background: 'radial-gradient(circle, rgba(0,170,255,0.15) 0%, transparent 70%)', borderRadius: '50%' }}/>
-                <svg width="280" height="280" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="0" y="0" width="300" height="300" rx="66" fill="#111111"/>
-                  <rect x="0" y="0" width="300" height="300" rx="66" fill="none" stroke="rgba(0,170,255,0.2)" strokeWidth="1"/>
-                  <g transform="translate(74,76)">
-                    <path d="M0 152 L0 4 Q0 -16 18 -20 Q72 -30 108 -6 Q148 18 148 58 Q148 98 108 112 Q86 122 60 122 L60 152 Z" fill="white" opacity="0.95"/>
-                    <path d="M26 92 L26 20 Q56 14 82 30 Q104 42 104 60 Q104 80 82 90 Q60 100 30 98" fill="#111111"/>
-                  </g>
-                  <text x="212" y="234" fontFamily="Arial Rounded MT Bold, Arial, sans-serif" fontSize="68" fontWeight="900" fill="#00AAFF" textAnchor="middle">S</text>
-                </svg>
+                <img
+                  src="/logo_vector.svg"
+                  alt="Publish Support"
+                  width="280"
+                  height="280"
+                  style={{ borderRadius: '20px' }}
+                />
               </div>
             </div>
           </div>
