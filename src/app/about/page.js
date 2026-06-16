@@ -1,25 +1,23 @@
+'use client'
 import Link from 'next/link'
-
-export const metadata = {
-  title: 'About — Publish Support',
-  description: 'Learn about Publish Support — who we are, what drives us, and how we help clients with software development and publishing.',
-}
 
 export default function AboutPage() {
   return (
     <div style={{ paddingTop: 'var(--nav-height)' }}>
-      {/* Hero */}
-      <section style={{
-        padding: '80px 32px',
-        background: `radial-gradient(ellipse at 30% 50%, rgba(0,170,255,0.07) 0%, transparent 60%)`,
-        borderBottom: '1px solid var(--border)',
-      }}>
+      <style>{`
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+        .btn-primary { transition: opacity 0.2s; }
+        .btn-primary:hover { opacity: 0.85; }
+        .value-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+        .stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 28px; display: flex; justify-content: space-between; align-items: center; }
+        @media(max-width:768px){ .about-grid { grid-template-columns: 1fr !important; gap: 40px !important; } }
+      `}</style>
+
+      <section style={{ padding: '80px 32px', background: `radial-gradient(ellipse at 30% 50%, rgba(0,170,255,0.07) 0%, transparent 60%)`, borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           <div style={{ maxWidth: '680px' }}>
             <div style={{ fontSize: '13px', color: 'var(--accent-blue)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>About Us</div>
-            <h1 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 900, lineHeight: 1.1, marginBottom: '24px' }}>
-              Built on Two Foundations
-            </h1>
+            <h1 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 900, lineHeight: 1.1, marginBottom: '24px' }}>Built on Two Foundations</h1>
             <p style={{ fontSize: '18px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               Publish Support was founded on a simple belief: that great software and great writing are more alike than they seem. Both demand clarity, structure, and purpose. We bring both crafts together under one roof.
             </p>
@@ -27,10 +25,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Story */}
       <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start' }}>
+          <div className="about-grid">
             <div>
               <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '24px' }}>Our Story</h2>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
@@ -43,7 +40,6 @@ export default function AboutPage() {
                 Today we serve clients ranging from independent authors needing digital tools, to organizations that need both a custom platform and the editorial expertise to populate it with great content.
               </p>
             </div>
-
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {[
                 { label: 'Software Projects Delivered', value: '50+' },
@@ -51,11 +47,7 @@ export default function AboutPage() {
                 { label: 'Years of Combined Experience', value: '15+' },
                 { label: 'Satisfied Clients', value: '100+' },
               ].map(stat => (
-                <div key={stat.label} style={{
-                  background: 'var(--bg-card)', border: '1px solid var(--border)',
-                  borderRadius: '10px', padding: '28px',
-                  display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                }}>
+                <div key={stat.label} className="stat-card">
                   <span style={{ color: 'var(--text-secondary)', fontSize: '15px' }}>{stat.label}</span>
                   <span style={{ fontFamily: 'var(--font-display)', fontSize: '32px', fontWeight: 700, color: 'var(--accent-blue)' }}>{stat.value}</span>
                 </div>
@@ -63,10 +55,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        <style>{`@media(max-width:768px){ section > div > div { grid-template-columns: 1fr !important; gap: 40px !important; } }`}</style>
       </section>
 
-      {/* Values */}
       <section style={{ padding: '80px 32px', background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '48px', textAlign: 'center' }}>What We Stand For</h2>
@@ -77,10 +67,7 @@ export default function AboutPage() {
               { title: 'Consistency', icon: '◷', desc: 'We deliver what we promise, on time, at the quality we agreed on. No surprises.' },
               { title: 'Collaboration', icon: '◉', desc: 'We work with our clients, not just for them. Your knowledge shapes every project.' },
             ].map(v => (
-              <div key={v.title} style={{
-                background: 'var(--bg-card)', border: '1px solid var(--border)',
-                borderRadius: '12px', padding: '32px',
-              }}>
+              <div key={v.title} className="value-card">
                 <div style={{ fontSize: '28px', color: 'var(--accent-blue)', marginBottom: '16px' }}>{v.icon}</div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>{v.title}</h3>
                 <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, fontSize: '15px' }}>{v.desc}</p>
@@ -90,14 +77,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section style={{ padding: '80px 32px', textAlign: 'center' }}>
         <div style={{ maxWidth: '500px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '16px' }}>Work With Us</h2>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: 1.7 }}>
-            Tell us about your project and we'll find the right way to help.
-          </p>
-          <Link href="/contact" style={{
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: 1.7 }}>Tell us about your project and we'll find the right way to help.</p>
+          <Link href="/contact" className="btn-primary" style={{
             display: 'inline-block', padding: '14px 36px', borderRadius: '8px',
             background: 'var(--accent-blue)', color: '#000', fontWeight: 600, fontSize: '15px',
           }}>Get in Touch</Link>
