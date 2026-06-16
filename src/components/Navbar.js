@@ -37,16 +37,13 @@ export default function Navbar() {
       }}>
         {/* Logo */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <svg width="40" height="40" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="0" width="300" height="300" rx="66" fill="#111111"/>
-            <g transform="translate(74,76)">
-              <path d="M72 228 L72 80 Q72 60 90 56 Q144 46 176 68 Q210 90 210 130 Q210 170 176 184 Q154 194 128 194 L128 228 Z" fill="white" opacity="0.95"/>
-              <path d="M98 168 L98 96 Q128 90 154 106 Q172 118 172 136 Q172 154 154 164 Q132 174 102 172" fill="#111111" stroke="none"/>
-            </g>
-            <g transform="translate(138, 240) scale(1.3, 0.75)">
-              <text x="0" y="0" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="56" font-weight="900" fill="#00AAFF" text-anchor="middle" dominant-baseline="auto">S</text>
-            </g>
-          </svg>
+          <img 
+            src="/logo_vector.svg" 
+            alt="Publish Support" 
+            width="44" 
+            height="44" 
+            style={{borderRadius: '10px'}}
+          />
           <div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 700, color: 'var(--white)', lineHeight: 1.1 }}>Publish</div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 700, color: 'var(--accent-blue)', lineHeight: 1.1 }}>Support</div>
