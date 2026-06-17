@@ -72,7 +72,7 @@ export default function HomePage() {
                       alt="Publish Support"
                       width="280"
                       height="280"
-                      style={{ borderRadius: '20px', position: 'absolute', top: 0, left: 0 }}
+                      style={{ borderRadius: '20px', position: 'absolute', top: 0, left: 0, animation: 'glowP 1s ease-out 2.5s forwards' }}
                     />
                     <div style={{
                       position: 'absolute',
@@ -94,6 +94,10 @@ export default function HomePage() {
                         0% { transform: translateX(120px) scale(0.3); opacity: 0; }
                         60% { opacity: 1; }
                         100% { transform: translateX(0px) scale(1); opacity: 1; }
+                      }
+                       @keyframes glowP {
+                        0% { filter: brightness(1) drop-shadow(0 0 0px #00AAFF); }
+                        100% { filter: brightness(1.2) drop-shadow(0 0 20px #00AAFF) drop-shadow(0 0 40px #00AAFF); }
                       }
                     `}</style>
                   </div>
