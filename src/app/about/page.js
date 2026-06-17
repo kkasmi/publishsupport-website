@@ -42,8 +42,8 @@ export default function AboutPage() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {[
-                { label: 'Software Projects Delivered', value: '50+' },
                 { label: 'Books & Articles Published', value: '200+' },
+                { label: 'Software Projects Delivered', value: '50+' },
                 { label: 'Years of Combined Experience', value: '15+' },
                 { label: 'Satisfied Clients', value: '100+' },
               ].map(stat => (
