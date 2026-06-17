@@ -65,13 +65,44 @@ export default function HomePage() {
             <div className="hero-icon" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <div style={{ position: 'relative' }}>
                 <div style={{ position: 'absolute', inset: '-20px', background: 'radial-gradient(circle, rgba(0,170,255,0.15) 0%, transparent 70%)', borderRadius: '50%' }}/>
-                <img
-                  src="/master_logo_1024.png"
-                  alt="Publish Support"
-                  width="280"
-                  height="280"
-                  style={{ borderRadius: '20px' }}
-                />
+               // <img src="/master_logo_1024.png" alt="Publish Support" width="280" height="280" style={{ borderRadius: '20px' }} />
+                  <div style={{ position: 'relative', width: '280px', height: '280px' }}>
+                    {/* P logo */}
+                    <img
+                      src="/master_logo_1024.png"
+                      alt="Publish Support"
+                      width="280"
+                      height="280"
+                      style={{ borderRadius: '20px', position: 'absolute', top: 0, left: 0 }}
+                    />
+                    {/* Animated S */}
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '20px',
+                      right: '10px',
+                      fontFamily: 'Arial Rounded MT Bold, Arial, sans-serif',
+                      fontSize: '80px',
+                      fontWeight: 900,
+                      color: '#00AAFF',
+                      animation: 'slideInS 1.5s ease-out forwards',
+                      opacity: 0,
+                    }}>S</div>
+                    <style>{`
+                      @keyframes slideInS {
+                        0% {
+                          transform: translateX(120px) scale(0.3);
+                          opacity: 0;
+                        }
+                        60% {
+                          opacity: 1;
+                        }
+                        100% {
+                          transform: translateX(0px) scale(1);
+                          opacity: 1;
+                        }
+                      }
+                    `}</style>
+                  </div>
               </div>
             </div>
           </div>
