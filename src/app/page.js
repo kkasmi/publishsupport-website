@@ -88,8 +88,8 @@ export default function HomePage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             {[
-              { icon: '⌨️', title: 'Software Development', desc: 'Custom ERP systems, web and desktop applications, APIs, and cloud solutions — built for small to medium-sized businesses.', cls: 'service-card-blue' },
               { icon: '📖', title: 'Publishing Support', desc: 'We help individual authors and academic institutions prepare their work for publication — editing, proofreading, indexing, mapping and more.', cls: 'service-card-purple' },
+              { icon: '⌨️', title: 'Software Development', desc: 'Custom ERP systems, web and desktop applications, APIs, and cloud solutions — built for small to medium-sized businesses.', cls: 'service-card-blue' },
             ].map(service => (
               <div key={service.title} className={`service-card ${service.cls}`} style={{
                 background: 'var(--bg-card)', borderRadius: '12px', padding: '36px',
