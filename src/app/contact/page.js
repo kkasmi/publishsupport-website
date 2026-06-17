@@ -7,10 +7,15 @@ export default function ContactPage() {
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value })
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    // In production, connect to a form service like Netlify Forms or Formspree
-    setSent(true)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const response = await fetch('https://formspree.io/f/mjgddake', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) setSent(true);
   }
 
   const inputStyle = {
