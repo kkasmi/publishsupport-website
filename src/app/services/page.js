@@ -18,7 +18,7 @@ export default function ServicesPage() {
             <div style={{ fontSize: '13px', color: 'var(--accent-blue)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>Our Services</div>
             <h1 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 900, lineHeight: 1.1, marginBottom: '24px' }}>Two Crafts.<br/>One Team.</h1>
             <p style={{ fontSize: '18px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              Whether you need custom software or publishing expertise, we provide the full range of services to bring your project to life.
+              From custom ERP systems for growing businesses to publishing support services — we deliver professional solutions tailored to your needs.
             </p>
           </div>
         </div>
@@ -59,6 +59,7 @@ export default function ServicesPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
             {[
+              { title: 'ERP Development', desc: 'Custom Enterprise Resource Planning solutions for small to medium-sized businesses — streamline your operations, finance, HR, inventory, and more in one integrated system.', icon: '🏢' },
               { title: 'Web Applications', desc: 'Full-stack web apps built with modern frameworks — React, Next.js, Node.js, and more.', icon: '🌐' },
               { title: 'Desktop Software', desc: 'Cross-platform desktop applications for Windows, Mac, and Linux.', icon: '💻' },
               { title: 'APIs & Backends', desc: 'Robust REST and GraphQL APIs, database design, and backend infrastructure.', icon: '⚙️' },
