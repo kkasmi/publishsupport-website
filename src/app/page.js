@@ -78,7 +78,7 @@ export default function HomePage() {
                     {/* Animated S */}
                     <div style={{
                       position: 'absolute',
-                      bottom: '20px',
+                      bottom: '-10px',
                       right: '10px',
                       fontFamily: 'Arial Rounded MT Bold, Arial, sans-serif',
                       fontSize: '80px',
