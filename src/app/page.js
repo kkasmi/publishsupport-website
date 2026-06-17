@@ -47,7 +47,7 @@ export default function HomePage() {
               </h1>
 
               <p style={{ fontSize: '18px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '40px', maxWidth: '480px' }}>
-                Publish Support bridges two worlds — expert software development and professional publishing. We build your digital tools and bring your written work to readers.
+                Publish Support bridges two worlds — professional publishing and expert software development. We build your digital tools and bring your written work to readers.
               </p>
 
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
