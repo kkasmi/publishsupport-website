@@ -65,7 +65,7 @@ export default function HomePage() {
             <div className="hero-icon" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <div style={{ position: 'relative' }}>
                 <div style={{ position: 'absolute', inset: '-20px', background: 'radial-gradient(circle, rgba(0,170,255,0.15) 0%, transparent 70%)', borderRadius: '50%' }}/>
-               /* <img src="/master_logo_1024.png" alt="Publish Support" width="280" height="280" style={{ borderRadius: '20px' }} /> */
+              
                   <div style={{ position: 'relative', width: '280px', height: '280px' }}>
                     {/* P logo */}
                     <img
