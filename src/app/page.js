@@ -89,8 +89,7 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             {[
               { icon: '⌨️', title: 'Software Development', desc: 'Custom web and desktop applications, APIs, automation tools, and cloud solutions — built to your specifications.', cls: 'service-card-blue' },
-              { icon: '📖', title: 'Book Publishing', desc: 'From manuscript to finished book — editing, layout, design, and distribution support for authors and publishers.', cls: 'service-card-purple' },
-              { icon: '✍️', title: 'Article Publishing', desc: 'Professional editorial services for articles, reports, and digital content — structured, polished, and ready to publish.', cls: 'service-card-green' },
+              { icon: '📖', title: 'Publishing Support', desc: 'We help individual authors and academic institutions prepare their work for publication — editing, proofreading, indexing, mapping and more.', cls: 'service-card-purple' },
             ].map(service => (
               <div key={service.title} className={`service-card ${service.cls}`} style={{
                 background: 'var(--bg-card)', borderRadius: '12px', padding: '36px',
