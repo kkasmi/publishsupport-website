@@ -29,21 +29,21 @@ export default function ServicesPage() {
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '48px' }}>
             <div style={{ width: '4px', height: '40px', background: '#7B5EFA', borderRadius: '2px' }}/>
-            <h2 style={{ fontSize: '32px', fontWeight: 700 }}>Publishing Services</h2>
+            <h2 style={{ fontSize: '32px', fontWeight: 700 }}>Publishing Support Services</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
             {[
-              { title: 'Book Publishing', desc: 'End-to-end support for authors — editing, layout, cover design, and distribution.', icon: '📚' },
-              { title: 'Article Publishing', desc: 'Professional editorial services for articles, white papers, and reports.', icon: '📰' },
-              { title: 'Editing & Proofreading', desc: 'Structural editing, copy editing, and proofreading for clear, error-free writing.', icon: '✏️' },
-              { title: 'Layout & Design', desc: 'Typography, page layout, and visual design for print and digital publications.', icon: '🎨' },
-              { title: 'Technical Writing', desc: 'Documentation, user guides, API references, and technical reports.', icon: '📋' },
-              { title: 'Digital Publishing', desc: 'Ebooks, online magazines, and digital-first publications for every device.', icon: '📱' },
+              { title: 'Editing & Proofreading', desc: 'Professional editing and proofreading services to ensure your manuscript is clear, consistent, and error-free — from structural edits to final polish.', icon: '✏️' },
+              { title: 'Indexing', desc: 'Comprehensive indexing services for books, academic texts, and technical documents — making your content easy to navigate and reference.', icon: '📑' },
+              { title: 'Mapping', desc: 'Custom maps and visual diagrams for books, academic publications, and reference materials — clear, accurate, and professionally designed.', icon: '🗺️' },
+              { title: 'Layout & Design', desc: 'Professional page layout and typesetting for print and digital publications — beautifully formatted and ready for publishing.', icon: '🎨' },
+              { title: 'Technical Writing', desc: 'Clear and precise technical writing for academic papers, manuals, and reference documents — written for the people who use them.', icon: '📋' },
+              { title: 'Manuscript Preparation', desc: 'Full manuscript preparation support — formatting, style guide compliance, and submission-ready documents for authors and academics.', icon: '📝' },
             ].map(s => (
               <div key={s.title} className="svc-card svc-card-purple">
-                <div style={{ fontSize: '28px', marginBottom: '14px' }}>{s.icon}</div>
-                <h3 style={{ fontSize: '17px', fontWeight: 600, marginBottom: '10px' }}>{s.title}</h3>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.7 }}>{s.desc}</p>
+                <div className="svc-icon">{s.icon}</div>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
               </div>
             ))}
           </div>
