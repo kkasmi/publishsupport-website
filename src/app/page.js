@@ -85,14 +85,14 @@ export default function HomePage() {
                       animation: 'slideInS 1.5s ease-out forwards',
                       opacity: 0,
                     }}>
-                      <svg width="50" height="40" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg"
-                        style={{ position: 'absolute', top: '-40px', left: '50%', transform: 'translateX(-50%)', opacity: 0.9, width: '50px', height: '40px' }}>
-                        <path d="M10 150 L10 30 Q10 20 22 18 Q60 12 90 22 L90 148 Q60 140 22 143 Z" fill="#1a1a2e" stroke="#00AAFF" strokeWidth="3"/>
-                        <path d="M94 22 Q124 12 162 18 Q174 20 174 30 L174 150 L162 143 Q124 140 94 148 Z" fill="#1a1a2e" stroke="#00AAFF" strokeWidth="3"/>
-                        <line x1="92" y1="22" x2="92" y2="148" stroke="#00AAFF" strokeWidth="3" strokeLinecap="round"/>
-                        <path d="M10 150 Q52 162 92 156 Q132 162 174 150" fill="none" stroke="#00AAFF" strokeWidth="2" strokeLinecap="round"/>
-                      </svg>
                       S
+                       <svg width="50" height="40" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg"
+                          style={{ position: 'absolute', top: '10px', left: '70px', opacity: 0.9, width: '50px', height: '40px' }}>
+                          <path d="M10 150 L10 30 Q10 20 22 18 Q60 12 90 22 L90 148 Q60 140 22 143 Z" fill="#1a1a2e" stroke="white" strokeWidth="3"/>
+                          <path d="M94 22 Q124 12 162 18 Q174 20 174 30 L174 150 L162 143 Q124 140 94 148 Z" fill="#1a1a2e" stroke="white" strokeWidth="3"/>
+                          <line x1="92" y1="22" x2="92" y2="148" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+                          <path d="M10 150 Q52 162 92 156 Q132 162 174 150" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                       </svg>
                     </div>
                     <style>{`
                       @keyframes slideInS {
