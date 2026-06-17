@@ -82,7 +82,7 @@ export default function HomePage() {
                       fontSize: '80px',
                       fontWeight: 900,
                       color: '#00AAFF',
-                      animation: 'slideInS 1.5s ease-out forwards',
+                      animation: 'slideInS 3s ease-out forwards',
                       opacity: 0,
                     }}>
                       S                       
