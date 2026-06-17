@@ -43,7 +43,7 @@ export default function HomePage() {
               </div>
 
               <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(42px, 6vw, 72px)', fontWeight: 900, lineHeight: 1.1, marginBottom: '24px' }}>
-                Where Code<br/><span style={{ color: 'var(--accent-blue)' }}>Meets the Page</span>
+                Where the Page<br/><span style={{ color: 'var(--accent-blue)' }}>Meets Support</span>
               </h1>
 
               <p style={{ fontSize: '18px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '40px', maxWidth: '480px' }}>
