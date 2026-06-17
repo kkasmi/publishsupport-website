@@ -51,7 +51,7 @@ export default function ContactPage() {
               <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '32px' }}>Get in Touch</h2>
 
               {[
-                { label: 'Email', value: 'info@publishsupport.com', icon: '✉' },
+                { label: 'Email', value: 'admin@publishsupport.com', icon: '✉' },
                 { label: 'Website', value: 'publishsupport.com', icon: '🌐' },
               ].map(item => (
                 <div key={item.label} style={{ marginBottom: '28px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
