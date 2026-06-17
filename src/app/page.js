@@ -79,14 +79,28 @@ export default function HomePage() {
                     <div style={{
                       position: 'absolute',
                       bottom: '-10px',
-                      right: '10px',
+                      right: '30px',
                       fontFamily: 'Arial Rounded MT Bold, Arial, sans-serif',
                       fontSize: '80px',
                       fontWeight: 900,
                       color: '#00AAFF',
                       animation: 'slideInS 1.5s ease-out forwards',
                       opacity: 0,
-                    }}>S</div>
+                    }}>
+                      {/* Book icon */}
+                      <svg width="90" height="70" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg"
+                        style={{ position: 'absolute', bottom: '-18px', left: '50%', transform: 'translateX(-50%)', opacity: 0.9 }}>
+                        <!-- Left page -->
+                        <path d="M10 150 L10 30 Q10 20 22 18 Q60 12 90 22 L90 148 Q60 140 22 143 Z" fill="#1a1a2e" stroke="#00AAFF" strokeWidth="3"/>
+                        <!-- Right page -->
+                        <path d="M94 22 Q124 12 162 18 Q174 20 174 30 L174 150 L162 143 Q124 140 94 148 Z" fill="#1a1a2e" stroke="#00AAFF" strokeWidth="3"/>
+                        <!-- Spine -->
+                        <line x1="92" y1="22" x2="92" y2="148" stroke="#00AAFF" strokeWidth="3" strokeLinecap="round"/>
+                        <!-- Base curve -->
+                        <path d="M10 150 Q52 162 92 156 Q132 162 174 150" fill="none" stroke="#00AAFF" strokeWidth="2" strokeLinecap="round"/>
+                      </svg>
+                      S
+                    </div>
                     <style>{`
                       @keyframes slideInS {
                         0% {
