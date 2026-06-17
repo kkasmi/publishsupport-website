@@ -36,7 +36,7 @@ export default function Footer() {
             <div style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '16px' }}>Contact</div>
             <div style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.8 }}>
               <div>publishsupport.com</div>
-              <div>info@publishsupport.com</div>
+              <div>admin@publishsupport.com</div>
             </div>
           </div>
         </div>
