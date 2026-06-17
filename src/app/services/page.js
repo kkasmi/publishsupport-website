@@ -41,10 +41,10 @@ export default function ServicesPage() {
               { title: 'Manuscript Preparation', desc: 'Full manuscript preparation support — formatting, style guide compliance, and submission-ready documents for authors and academics.', icon: '📝' },
             ].map(s => (
               <div key={s.title} className="svc-card svc-card-purple">
-                <div className="svc-icon">{s.icon}</div>
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
-              </div>
+                <div style={{ fontSize: '28px', marginBottom: '14px' }}>{s.icon}</div>
+                <h3 style={{ fontSize: '17px', fontWeight: 600, marginBottom: '10px' }}>{s.title}</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.7 }}>{s.desc}</p>
+            </div>
             ))}
           </div>
         </div>
