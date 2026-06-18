@@ -9,7 +9,7 @@ export default function Footer() {
         .footer-link:hover { color: var(--accent-blue); }
       `}</style>
       <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '48px', marginBottom: '48px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1.5fr 1fr 1.5fr', gap: '48px', marginBottom: '48px' }}>
 
           {/* Brand */}
           <div>
