@@ -106,15 +106,15 @@ export default function ServicesPage() {
               </h3>
       
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px', fontSize: '15px' }}>
-                A comprehensive filing solution for Canada Revenue Agency's Global Minimum Tax (GMT) requirements. Built for accounting firms and multinational corporations with global business operations that require tax compliance across multiple jurisdictions.
+                A comprehensive software suite that connects directly to the Canada Revenue Agency's (CRA) API via the Special Elections and Returns System (SERS) Web Service — enabling electronic submission of Global Minimum Tax (GMT) returns for businesses operating across multiple countries.
               </p>
-      
+              
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '28px', fontSize: '15px' }}>
-                The suite supports all four CRA GMT filing types, enabling seamless submission of Global Minimum Tax returns for organizations operating in multiple countries.
+                The suite handles the full filing lifecycle — from CRA Certification Testing (CT) environment validation through to production filing — supporting both EFILE and Digital Access Code (DAC) authentication methods with your 15-character GMT program account number.
               </p>
       
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                {['JSON', 'XML', 'REST API', 'CRA Compliant'].map(tag => (
+                {['JSON', 'XML', 'REST API', 'SERS Web Service', 'EFILE', 'DAC Auth', 'CRA Certified'].map(tag => (
                   <span key={tag} style={{
                     padding: '6px 14px', borderRadius: '100px',
                     background: 'rgba(0,170,255,0.08)', border: '1px solid rgba(0,170,255,0.2)',
@@ -131,10 +131,10 @@ export default function ServicesPage() {
               </div>
       
               {[
-                { code: 'GIRN', name: 'Global Information Return — New', desc: 'Initial filing for new global minimum tax reporting obligations.' },
-                { code: 'GMTR', name: 'Global Minimum Tax Return', desc: 'Primary return for calculating and reporting GMT liabilities.' },
-                { code: 'GIR', name: 'Global Information Return', desc: 'Ongoing information return for global business reporting.' },
-                { code: 'GIR Status', name: 'GIR Status Update', desc: 'Status updates and amendments to existing GIR filings.' },
+                { code: 'GIRN', name: 'GloBE Information Return Notification', desc: 'Initial notification filing required before submitting GMT returns — processed through the CRA SERS Web Service.' },
+                { code: 'GMTR', name: 'Global Minimum Tax Return', desc: 'Primary return for calculating and reporting Global Minimum Tax liabilities for multinational businesses.' },
+                { code: 'GIR', name: 'GloBE Information Return', desc: 'Comprehensive information return for global business operations — submitted via REST API in XML or JSON format.' },
+                { code: 'GIR Status', name: 'GIR Status Inquiry', desc: 'Real-time status inquiry for submitted GloBE Information Returns via the CRA SERS Web Service.' },
               ].map(filing => (
                 <div key={filing.code} style={{
                   display: 'flex', gap: '16px', alignItems: 'flex-start',
