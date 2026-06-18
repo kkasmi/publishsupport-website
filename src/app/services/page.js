@@ -158,9 +158,10 @@ export default function ServicesPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '8px' }}>
                 <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Designed for:</span>
                 <span style={{ fontSize: '13px', color: 'var(--text-primary)', fontWeight: 500 }}>Accounting Firms · Multinational Corporations</span>
-              </div>
+              </div>              
+            </div>
 
-                {/* Third column - screenshot */}
+              {/* Third column - screenshot */}
               <div>
                 <div style={{ fontSize: '13px', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>
                   Application Preview
@@ -192,7 +193,6 @@ export default function ServicesPage() {
                 </div>
               </div>
                 
-            </div>
           </div>
         </div>
         <style>{`@media(max-width:768px){ .project-grid { grid-template-columns: 1fr !important; } }`}</style>
