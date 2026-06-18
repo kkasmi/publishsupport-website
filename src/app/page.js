@@ -125,7 +125,7 @@ export default function HomePage() {
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '64px' }}>
             <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 700, marginBottom: '16px' }}>What We Do</h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '17px', maxWidth: '520px', margin: '0 auto' }}>Two disciplines, one company — delivering quality across software and publishing.</p>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '17px', maxWidth: '520px', margin: '0 auto' }}>Two disciplines, one company — delivering quality across publishing and software.</p>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
