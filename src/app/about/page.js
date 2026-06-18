@@ -19,7 +19,7 @@ export default function AboutPage() {
             <div style={{ fontSize: '13px', color: 'var(--accent-blue)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>About Us</div>
             <h1 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 900, lineHeight: 1.1, marginBottom: '24px' }}>Built on Two Foundations</h1>
             <p style={{ fontSize: '18px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              Publish Support was founded on a simple belief: that great software and great writing are more alike than they seem. Both demand clarity, structure, and purpose. We bring both crafts together under one roof.
+              Publish Support was founded on a simple belief: that great writing and great software are more alike than they seem. Both demand clarity, structure, and purpose. We bring both crafts together under one roof.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
                 Publish Support grew out of a recognition that many clients needed both technical and editorial expertise — but found themselves working with separate teams who didn't communicate well with each other.
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px' }}>
-                We built a company where software developers and publishing professionals work side by side, sharing a common vocabulary and a common commitment to quality output.
+                We built a company where publishing professionals and software developers work side by side, sharing a common vocabulary and a common commitment to quality output.
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
                 Today we serve clients ranging from independent authors needing digital tools, to organizations that need both a custom platform and the editorial expertise to populate it with great content.
