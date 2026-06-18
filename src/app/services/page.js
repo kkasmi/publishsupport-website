@@ -10,6 +10,7 @@ export default function ServicesPage() {
         .svc-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 28px; transition: border-color 0.2s; }
         .svc-card-blue:hover { border-color: var(--accent-blue) !important; }
         .svc-card-purple:hover { border-color: #7B5EFA !important; }
+        @media(max-width:768px){ .project-grid { grid-template-columns: 1fr !important; } }
       `}</style>
 
       <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)', background: `radial-gradient(ellipse at 70% 30%, rgba(0,170,255,0.07) 0%, transparent 60%)` }}>
@@ -23,7 +24,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
 
       <section style={{ padding: '80px 32px', background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
@@ -44,13 +44,12 @@ export default function ServicesPage() {
                 <div style={{ fontSize: '28px', marginBottom: '14px' }}>{s.icon}</div>
                 <h3 style={{ fontSize: '17px', fontWeight: 600, marginBottom: '10px' }}>{s.title}</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.7 }}>{s.desc}</p>
-            </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-                
       <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '48px' }}>
@@ -84,13 +83,14 @@ export default function ServicesPage() {
             <div style={{ width: '4px', height: '40px', background: '#00AAFF', borderRadius: '2px' }}/>
             <h2 style={{ fontSize: '32px', fontWeight: 700 }}>Featured Projects</h2>
           </div>
-      
+
           <div className="project-grid" style={{
             background: 'var(--bg-card)', border: '1px solid var(--border)',
             borderRadius: '16px', padding: '48px',
-            display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'start'
+            display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '48px', alignItems: 'start'
           }}>
-            {/* Left side - project info */}
+
+            {/* Column 1 - project info */}
             <div>
               <div style={{
                 display: 'inline-flex', alignItems: 'center', gap: '8px',
@@ -100,19 +100,19 @@ export default function ServicesPage() {
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#00AAFF', display: 'block' }}/>
                 <span style={{ fontSize: '12px', color: '#00AAFF', fontWeight: 500 }}>Software Development</span>
               </div>
-      
+
               <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>
                 CRA GMT Filing Suite
               </h3>
-      
+
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px', fontSize: '15px' }}>
                 A comprehensive software suite that connects directly to the Canada Revenue Agency's (CRA) API via the Special Elections and Returns System (SERS) Web Service — enabling electronic submission of Global Minimum Tax (GMT) returns for businesses operating across multiple countries.
               </p>
-              
+
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '28px', fontSize: '15px' }}>
                 The suite handles the full filing lifecycle — from CRA Certification Testing (CT) environment validation through to production filing — supporting both EFILE and Digital Access Code (DAC) authentication methods with your 15-character GMT program account number.
               </p>
-      
+
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                 {['JSON', 'XML', 'REST API', 'SERS Web Service', 'EFILE', 'DAC Auth', 'CRA Certified'].map(tag => (
                   <span key={tag} style={{
@@ -123,13 +123,13 @@ export default function ServicesPage() {
                 ))}
               </div>
             </div>
-      
-            {/* Right side - filing types */}
+
+            {/* Column 2 - filing types */}
             <div>
               <div style={{ fontSize: '13px', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>
                 Supported Filing Types
               </div>
-      
+
               {[
                 { code: 'GIRN', name: 'GloBE Information Return Notification', desc: 'Initial notification filing required before submitting GMT returns — processed through the CRA SERS Web Service.' },
                 { code: 'GMTR', name: 'Global Minimum Tax Return', desc: 'Primary return for calculating and reporting Global Minimum Tax liabilities for multinational businesses.' },
@@ -154,54 +154,46 @@ export default function ServicesPage() {
                   </div>
                 </div>
               ))}
-      
+
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '8px' }}>
                 <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Designed for:</span>
                 <span style={{ fontSize: '13px', color: 'var(--text-primary)', fontWeight: 500 }}>Accounting Firms · Multinational Corporations</span>
-              </div>              
+              </div>
             </div>
 
-              
-                
-          </div>
-        </div>
-
-              {/* Third column - screenshot */}
-               {/* Screenshot full width below */}
-        <div style={{ marginTop: '40px' }}>
-          <div style={{
-            fontSize: '13px', color: 'var(--text-secondary)', fontWeight: 600,
-            letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px'
-          }}>
-            Application Preview
-          </div>
-          <div style={{
-            border: '1px solid var(--border)',
-            borderRadius: '12px',
-            overflow: 'hidden',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
-          }}>
-            <div style={{
-              background: '#1a1a2e', padding: '8px 12px',
-              display: 'flex', gap: '6px', alignItems: 'center',
-              borderBottom: '1px solid var(--border)',
-            }}>
-              <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f57', display: 'block' }}/>
-              <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#febc2e', display: 'block' }}/>
-              <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#28c840', display: 'block' }}/>
-              <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: '8px' }}>CRA GMT Filing Suite</span>
+            {/* Column 3 - screenshot */}
+            <div>
+              <div style={{ fontSize: '13px', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>
+                Application Preview
+              </div>
+              <div style={{
+                border: '1px solid var(--border)',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
+              }}>
+                <div style={{
+                  background: '#1a1a2e', padding: '8px 12px',
+                  display: 'flex', gap: '6px', alignItems: 'center',
+                  borderBottom: '1px solid var(--border)',
+                }}>
+                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f57', display: 'block' }}/>
+                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#febc2e', display: 'block' }}/>
+                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#28c840', display: 'block' }}/>
+                  <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: '8px' }}>CRA GMT Filing Suite</span>
+                </div>
+                <img
+                  src="/cra-gmt-screenshot.png"
+                  alt="CRA GMT Filing Suite Screenshot"
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                />
+              </div>
             </div>
-            <img
-              src="/cra-gmt-screenshot.png"
-              alt="CRA GMT Filing Suite Screenshot"
-              style={{ width: '100%', height: 'auto', display: 'block' }}
-            />
+
           </div>
         </div>
-                
-        <style>{`@media(max-width:768px){ .project-grid { grid-template-columns: 1fr !important; } }`}</style>
       </section>
-      
+
       <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           <h2 style={{ fontSize: '32px', fontWeight: 700, marginBottom: '48px', textAlign: 'center' }}>How We Work</h2>
