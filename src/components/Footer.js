@@ -17,7 +17,7 @@ export default function Footer() {
               <span style={{ color: 'var(--white)' }}>Publish</span>{' '}<span style={{ color: 'var(--accent-blue)' }}>Support</span>
             </div>
             <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.7, maxWidth: '260px' }}>
-              Software development and publishing support services — from code to print.
+              Publishing support services and Software development — from code to print.
             </p>
           </div>
 
