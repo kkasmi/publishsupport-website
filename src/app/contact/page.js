@@ -40,7 +40,7 @@ export default function ContactPage() {
               Let's Talk About Your Project
             </h1>
             <p style={{ fontSize: '18px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              Whether it's a software idea or a publishing project, we'd love to hear about it. Send us a message and we'll get back to you promptly.
+              Whether it's a publishing project or a software idea, we'd love to hear about it. Send us a message and we'll get back to you promptly.
             </p>
           </div>
         </div>
