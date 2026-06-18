@@ -15,7 +15,11 @@ export default function HomePage() {
         .service-card-purple:hover { border-color: #7B5EFA !important; }
         .service-card-green:hover { border-color: #00C98D !important; }
         .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-        @media(max-width:768px){ .hero-grid { grid-template-columns: 1fr !important; } .hero-icon { display: none !important; } }
+        @media(max-width:768px){ 
+          .hero-grid { grid-template-columns: 1fr !important; } 
+          .hero-icon { display: flex !important; justify-content: center; margin-top: 32px; }
+          .hero-icon img { width: 200px !important; height: 200px !important; }
+        }
       `}</style>
 
       {/* Hero */}
@@ -66,7 +70,7 @@ export default function HomePage() {
               <div style={{ position: 'relative' }}>
                 <div style={{ position: 'absolute', inset: '-20px', background: 'radial-gradient(circle, rgba(0,170,255,0.15) 0%, transparent 70%)', borderRadius: '50%' }}/>
               
-                  <div style={{ position: 'relative', width: '280px', height: '280px' }}>
+                  <div style={{ position: 'relative', width: 'min(280px, 100%)', height: 'min(280px, 100%)' }}>
                     <img
                       src="/master_logo_1024.png"
                       alt="Publish Support"
