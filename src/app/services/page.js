@@ -77,6 +77,93 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Featured Projects */}
+      <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)', background: 'var(--bg-secondary)' }}>
+        <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '48px' }}>
+            <div style={{ width: '4px', height: '40px', background: '#00AAFF', borderRadius: '2px' }}/>
+            <h2 style={{ fontSize: '32px', fontWeight: 700 }}>Featured Projects</h2>
+          </div>
+      
+          <div style={{
+            background: 'var(--bg-card)', border: '1px solid var(--border)',
+            borderRadius: '16px', padding: '48px',
+            display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'start'
+          }}>
+            {/* Left side - project info */}
+            <div>
+              <div style={{
+                display: 'inline-flex', alignItems: 'center', gap: '8px',
+                background: 'rgba(0,170,255,0.12)', border: '1px solid rgba(0,170,255,0.25)',
+                borderRadius: '100px', padding: '4px 14px', marginBottom: '20px',
+              }}>
+                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#00AAFF', display: 'block' }}/>
+                <span style={{ fontSize: '12px', color: '#00AAFF', fontWeight: 500 }}>Software Development</span>
+              </div>
+      
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>
+                CRA GMT Filing Suite
+              </h3>
+      
+              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '20px', fontSize: '15px' }}>
+                A comprehensive filing solution for Canada Revenue Agency's Global Minimum Tax (GMT) requirements. Built for accounting firms and multinational corporations with global business operations that require tax compliance across multiple jurisdictions.
+              </p>
+      
+              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '28px', fontSize: '15px' }}>
+                The suite supports all four CRA GMT filing types, enabling seamless submission of Global Minimum Tax returns for organizations operating in multiple countries.
+              </p>
+      
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                {['JSON', 'XML', 'REST API', 'CRA Compliant'].map(tag => (
+                  <span key={tag} style={{
+                    padding: '6px 14px', borderRadius: '100px',
+                    background: 'rgba(0,170,255,0.08)', border: '1px solid rgba(0,170,255,0.2)',
+                    fontSize: '13px', color: '#00AAFF', fontWeight: 500,
+                  }}>{tag}</span>
+                ))}
+              </div>
+            </div>
+      
+            {/* Right side - filing types */}
+            <div>
+              <div style={{ fontSize: '13px', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>
+                Supported Filing Types
+              </div>
+      
+              {[
+                { code: 'GIRN', name: 'Global Information Return — New', desc: 'Initial filing for new global minimum tax reporting obligations.' },
+                { code: 'GMTR', name: 'Global Minimum Tax Return', desc: 'Primary return for calculating and reporting GMT liabilities.' },
+                { code: 'GIR', name: 'Global Information Return', desc: 'Ongoing information return for global business reporting.' },
+                { code: 'GIR Status', name: 'GIR Status Update', desc: 'Status updates and amendments to existing GIR filings.' },
+              ].map(filing => (
+                <div key={filing.code} style={{
+                  display: 'flex', gap: '16px', alignItems: 'flex-start',
+                  marginBottom: '20px', paddingBottom: '20px',
+                  borderBottom: '1px solid var(--border)',
+                }}>
+                  <div style={{
+                    width: '52px', height: '36px', borderRadius: '6px',
+                    background: 'rgba(0,170,255,0.12)', border: '1px solid rgba(0,170,255,0.25)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '11px', fontWeight: 700, color: '#00AAFF',
+                    flexShrink: 0, letterSpacing: '0.5px',
+                  }}>{filing.code}</div>
+                  <div>
+                    <div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '4px' }}>{filing.name}</div>
+                    <div style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.6 }}>{filing.desc}</div>
+                  </div>
+                </div>
+              ))}
+      
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '8px' }}>
+                <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Designed for:</span>
+                <span style={{ fontSize: '13px', color: 'var(--text-primary)', fontWeight: 500 }}>Accounting Firms · Multinational Corporations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>{`@media(max-width:768px){ .project-grid { grid-template-columns: 1fr !important; } }`}</style>
+      </section>
       
       <section style={{ padding: '80px 32px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
