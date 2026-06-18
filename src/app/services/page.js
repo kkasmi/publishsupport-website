@@ -88,7 +88,7 @@ export default function ServicesPage() {
           <div className="project-grid" style={{
             background: 'var(--bg-card)', border: '1px solid var(--border)',
             borderRadius: '16px', padding: '48px',
-            display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '48px', alignItems: 'start'
+            display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'start'
           }}>
             {/* Left side - project info */}
             <div>
@@ -161,40 +161,44 @@ export default function ServicesPage() {
               </div>              
             </div>
 
-              {/* Third column - screenshot */}
-              <div>
-                <div style={{ fontSize: '13px', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>
-                  Application Preview
-                </div>
-                <div style={{
-                  border: '1px solid var(--border)',
-                  borderRadius: '12px',
-                  overflow: 'hidden',
-                  boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
-                }}>
-                  <div style={{
-                    background: '#1a1a2e',
-                    padding: '8px 12px',
-                    display: 'flex',
-                    gap: '6px',
-                    alignItems: 'center',
-                    borderBottom: '1px solid var(--border)',
-                  }}>
-                    <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f57', display: 'block' }}/>
-                    <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#febc2e', display: 'block' }}/>
-                    <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#28c840', display: 'block' }}/>
-                    <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: '8px' }}>CRA GMT Filing Suite</span>
-                  </div>
-                  <img
-                    src="/cra-gmt-screenshot.png"
-                    alt="CRA GMT Filing Suite Screenshot"
-                    style={{ width: '100%', height: 'auto', display: 'block' }}
-                  />
-                </div>
-              </div>
+              
                 
           </div>
         </div>
+
+              {/* Third column - screenshot */}
+               {/* Screenshot full width below */}
+        <div style={{ marginTop: '40px' }}>
+          <div style={{
+            fontSize: '13px', color: 'var(--text-secondary)', fontWeight: 600,
+            letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px'
+          }}>
+            Application Preview
+          </div>
+          <div style={{
+            border: '1px solid var(--border)',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
+          }}>
+            <div style={{
+              background: '#1a1a2e', padding: '8px 12px',
+              display: 'flex', gap: '6px', alignItems: 'center',
+              borderBottom: '1px solid var(--border)',
+            }}>
+              <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f57', display: 'block' }}/>
+              <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#febc2e', display: 'block' }}/>
+              <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#28c840', display: 'block' }}/>
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: '8px' }}>CRA GMT Filing Suite</span>
+            </div>
+            <img
+              src="/cra-gmt-screenshot.png"
+              alt="CRA GMT Filing Suite Screenshot"
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            />
+          </div>
+        </div>
+                
         <style>{`@media(max-width:768px){ .project-grid { grid-template-columns: 1fr !important; } }`}</style>
       </section>
       
