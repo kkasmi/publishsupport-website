@@ -18,7 +18,7 @@ export default function ServicesPage() {
             <div style={{ fontSize: '13px', color: 'var(--accent-blue)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>Our Services</div>
             <h1 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 900, lineHeight: 1.1, marginBottom: '24px' }}>Two Crafts.<br/>One Team.</h1>
             <p style={{ fontSize: '18px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              From custom ERP systems for growing businesses to publishing support services — we deliver professional solutions tailored to your needs.
+              From publishing support services to custom ERP systems for growing businesses — we deliver professional solutions tailored to your needs.
             </p>
           </div>
         </div>
