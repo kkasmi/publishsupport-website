@@ -27,8 +27,18 @@ export default function Footer() {
             ))}
           </div>
           <div>
-            <div style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '16px' }}>Services</div>
-            <div style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '10px' }}>Publishing Support</div>
+            <div>
+              <div style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '16px' }}>Publishing Support</div>
+              {['Editing & Proofreading', 'Indexing', 'Mapping', 'Layout & Design', 'Technical Writing', 'Manuscript Preparation'].map(s => (
+                <div key={s} style={{ marginBottom: '10px', color: 'var(--text-secondary)', fontSize: '14px' }}>{s}</div>
+              ))}
+            </div>
+            <div>
+              <div style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '16px' }}>Software</div>
+              {['ERP Development', 'Web Applications', 'APIs & Backends', 'Cloud Solutions'].map(s => (
+                <div key={s} style={{ marginBottom: '10px', color: 'var(--text-secondary)', fontSize: '14px' }}>{s}</div>
+              ))}
+            </div>
               {['Editing & Proofreading', 'Indexing', 'Mapping', 'Layout & Design', 'Technical Writing', 'Manuscript Preparation'].map(s => (
                 <div key={s} style={{ marginBottom: '10px', color: 'var(--text-secondary)', fontSize: '14px' }}>{s}</div>
               ))}
