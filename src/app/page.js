@@ -82,8 +82,8 @@ export default function HomePage() {
                     />
                     <div style={{
                       position: 'absolute',
-                      bottom: '-30px',
-                      right: '10px',
+                      bottom: '-10px',
+                      right: '20px',
                       fontFamily: 'Arial Rounded MT Bold, Arial, sans-serif',
                       fontSize: '80px',
                       fontWeight: 900,
