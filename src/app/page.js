@@ -98,8 +98,10 @@ export default function HomePage() {
                       }
                       @keyframes glowP {
                         0% { filter: brightness(1) drop-shadow(0 0 0px #00AAFF); }
-                        40% { filter: brightness(1.2) drop-shadow(0 0 20px #00AAFF) drop-shadow(0 0 40px #00AAFF); }
-                        90% { filter: brightness(1.2) drop-shadow(0 0 20px #00AAFF) drop-shadow(0 0 40px #00AAFF); }
+                        15% { filter: brightness(1) drop-shadow(0 0 0px #00AAFF); }
+                        25% { filter: brightness(1.2) drop-shadow(0 0 20px #00AAFF) drop-shadow(0 0 40px #00AAFF); }
+                        75% { filter: brightness(1.2) drop-shadow(0 0 20px #00AAFF) drop-shadow(0 0 40px #00AAFF); }
+                        90% { filter: brightness(1) drop-shadow(0 0 0px #00AAFF); }
                         100% { filter: brightness(1) drop-shadow(0 0 0px #00AAFF); }
                       }
                     `}</style>
