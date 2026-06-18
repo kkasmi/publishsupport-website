@@ -20,6 +20,7 @@ export default function HomePage() {
           .hero-icon { display: flex !important; justify-content: center; margin-top: 32px; }
           .hero-icon img { width: 200px !important; height: 200px !important; }
           .hero-icon > div > div > div:last-child { font-size: 60px !important; bottom: -8px !important; right: 60px !important; }
+          .project-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
 
