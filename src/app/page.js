@@ -45,7 +45,7 @@ export default function HomePage() {
                 borderRadius: '100px', padding: '6px 16px', marginBottom: '28px',
               }}>
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--accent-blue)', display: 'block' }}/>
-                <span style={{ fontSize: '13px', color: 'var(--accent-blue)', fontWeight: 500, letterSpacing: '0.5px' }}>Software & Publishing Solutions</span>
+                <span style={{ fontSize: '13px', color: 'var(--accent-blue)', fontWeight: 500, letterSpacing: '0.5px' }}>Publishing Support Services & Software Development</span>
               </div>
 
               <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(42px, 6vw, 72px)', fontWeight: 900, lineHeight: 1.1, marginBottom: '24px' }}>
