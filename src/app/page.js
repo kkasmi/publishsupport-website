@@ -72,7 +72,7 @@ export default function HomePage() {
                       alt="Publish Support"
                       width="280"
                       height="280"
-                      style={{ borderRadius: '20px', position: 'absolute', top: 0, left: 0, animation: 'glowP 6s ease-in-out infinite' }}
+                      style={{ borderRadius: '20px', position: 'absolute', top: 0, left: 0, animation: 'glowP 10s ease-in-out infinite' }}
                     />
                     <div style={{
                       position: 'absolute',
@@ -83,7 +83,7 @@ export default function HomePage() {
                       fontWeight: 900,
                       color: '#00AAFF',
                       textShadow: '0 0 20px #00AAFF, 0 0 40px #00AAFF, 0 0 60px #00AAFF',
-                      animation: 'slideInS 6s ease-in-out infinite',
+                      animation: 'slideInS 10s ease-in-out infinite',
                       animationDelay: '0s',
                       opacity: 0,
                     }}>
@@ -92,9 +92,8 @@ export default function HomePage() {
                     <style>{`
                       @keyframes slideInS {
                         0% { transform: translate(120px, 120px) scale(0.3); opacity: 0; }
-                        60% { opacity: 1; }
+                        20% { transform: translate(0px, 0px) scale(1); opacity: 1; }
                         80% { transform: translate(0px, 0px) scale(1); opacity: 1; }
-                        90% { transform: translate(0px, 0px) scale(1); opacity: 1; }
                         100% { transform: translate(120px, 120px) scale(0.3); opacity: 0; }
                       }
                       @keyframes glowP {
