@@ -19,6 +19,7 @@ export default function HomePage() {
           .hero-grid { grid-template-columns: 1fr !important; } 
           .hero-icon { display: flex !important; justify-content: center; margin-top: 32px; }
           .hero-icon img { width: 200px !important; height: 200px !important; }
+          .hero-icon > div > div > div:last-child { font-size: 60px !important; bottom: -8px !important; right: 60px !important; }
         }
       `}</style>
 
@@ -70,13 +71,13 @@ export default function HomePage() {
               <div style={{ position: 'relative' }}>
                 <div style={{ position: 'absolute', inset: '-20px', background: 'radial-gradient(circle, rgba(0,170,255,0.15) 0%, transparent 70%)', borderRadius: '50%' }}/>
               
-                  <div style={{ position: 'relative', width: 'min(280px, 100%)', height: 'min(280px, 100%)' }}>
+                  <div style={{ position: 'relative', width: '200px', height: '200px' }}>
                     <img
                       src="/master_logo_1024.png"
                       alt="Publish Support"
                       width="280"
                       height="280"
-                      style={{ borderRadius: '20px', position: 'absolute', top: 0, left: 0, animation: 'glowP 12s ease-in-out infinite' }}
+                      style={{ borderRadius: '20px', position: 'absolute', top: 0, left: 0, animation: 'glowP 12s ease-in-out infinite', width: '100%', height: '100%', objectFit: 'contain' }}
                     />
                     <div style={{
                       position: 'absolute',
